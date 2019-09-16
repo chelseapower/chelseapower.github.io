@@ -21,15 +21,15 @@ This helped me quickly remove 12.4 million records before I moved to the final C
 
 I always like to start by generating histograms for the data.
 
-![Histogram](http://drive.google.com/uc?export=view&id=1eRoEaBKmyrwhpsvDXdpIXgRV6SVAXmNP)
+![Histogram](https://drive.google.com/uc?export=view&id=1eRoEaBKmyrwhpsvDXdpIXgRV6SVAXmNP)
 
 Most of the data is skewed and has outliers. So then I checked for multicollinarity by generating a heatmap.
 
-![Multicollinearity](http://drive.google.com/uc?export=view&id=1l_Ayu6ps5Ace4WMdK5qQ21LyTFMBSk6v)
+![Multicollinearity](https://drive.google.com/uc?export=view&id=1l_Ayu6ps5Ace4WMdK5qQ21LyTFMBSk6v)
 
 Two variables showed to be correlated to each other but I leave them in for now. My next challenge is dealing with the data being imbalanced. After upsampling and scaling the data, I end up with a balanced dataset!
 
-![Predictor scaled](http://drive.google.com/uc?export=view&id=1pSQ5RvFloq8Is650rj84LKVw_y1CFzG1)
+![Predictor scaled](https://drive.google.com/uc?export=view&id=1pSQ5RvFloq8Is650rj84LKVw_y1CFzG1)
 
 ### Summary
 
