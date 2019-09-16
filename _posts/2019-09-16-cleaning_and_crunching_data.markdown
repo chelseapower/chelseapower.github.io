@@ -21,26 +21,24 @@ This helped me quickly remove 12.4 million records before I moved to the final C
 
 I always like to start by generating histograms for the data.
 
-![Histogram](https://drive.google.com/file/d/1cNHampIv4grkqfBjcsqY_YCX3oyIafUX/view?usp=sharing)
-
 ![Histogram][id]
-[id]: https://drive.google.com/file/d/1cNHampIv4grkqfBjcsqY_YCX3oyIafUX/view?usp=sharing "Histogram"
+[id]: https://drive.google.com/open?id=1eRoEaBKmyrwhpsvDXdpIXgRV6SVAXmNP "Histogram"
 
 Most of the data is skewed and has outliers. So then I checked for multicollinarity by generating a heatmap.
 
 ![Multicollinearity](https://drive.google.com/file/d/1YEdMJZMkF3syB6iBmwSicRjNwocUqtXa/view?usp=sharing)
 
 ![Multicollinearity][id2]
-[id2]: https://drive.google.com/file/d/1YEdMJZMkF3syB6iBmwSicRjNwocUqtXa/view?usp=sharing "Multicollinearity"
+[id2]: https://drive.google.com/open?id=1l_Ayu6ps5Ace4WMdK5qQ21LyTFMBSk6v "Multicollinearity"
 
 Two variables showed to be correlated to each other but I leave them in for now. My next challenge is dealing with the data being imbalanced. After upsampling and scaling the data, I end up with a balanced dataset!
 
 ![Predictor Scaled][id3]
-[id3]: https://drive.google.com/file/d/1uRTvOdAiIXgQjX88SIItWu8Nbqi-aLKr/view?usp=sharing "Predictor Scaled"
+[id3]: https://drive.google.com/open?id=1pSQ5RvFloq8Is650rj84LKVw_y1CFzG1 "Predictor Scaled"
 
 ### Summary
 
-After all of the data cleaning and reducing effort, my final results paid off. The final sequential neural network model predicts with **100% accuracy**!
+After all of the data cleaning and reducing effort, my final results paid off. The final sequential neural network model predicts with **100% accuracy!**
 
 
 
