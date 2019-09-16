@@ -34,7 +34,7 @@ My next challenge is dealing with the data being imbalanced. After upsampling an
 
 ### Summary
 
-After all of the data cleaning and reducing effort, my final results paid off. The final sequential neural network model predicts with **100% accuracy!**
+After all of the data cleaning and reducing effort, my final results paid off. The final sequential neural network model predicts with **100% accuracy!** You can view my jupyter notebook and presentation in my [Git Hub.](https://github.com/chelseapower/dsc-4-final-project-online-ds-pt-011419/)
 
 
 
