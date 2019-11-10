@@ -12,7 +12,8 @@ For a Machine Learning Classification project, I used 2018 Spotify user streamin
 
 I read in each of the Spotify CSV files, renamed and reordered columns so they could be merged with an inner join in a single dataset with 167,880 rows and 50 columns.
 
-![CSV Merge](<https://drive.google.com/uc?export=view&id=1bEB9XnyLGFeZiY2IkhGfqsuOsMY1pQP5)
+![MergeCSV](<https://drive.google.com/uc?export=view&id=1bEB9XnyLGFeZiY2IkhGfqsuOsMY1pQP5)
+
 
 Based on the [documentation](https://developer.spotify.com/documentation/web-api/reference/object-model/) provided by Spotify I was able to quickly identify 16 unnecessary / categorical features.
 
