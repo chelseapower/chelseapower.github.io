@@ -12,7 +12,7 @@ For a Machine Learning Classification project, I used 2018 Spotify user streamin
 
 I read in each of the Spotify CSV files, renamed and reordered columns so they could be merged with an inner join in a single dataset with 167,880 rows and 50 columns.
 
-![MergeCSV](<https://drive.google.com/uc?export=view&id=1bEB9XnyLGFeZiY2IkhGfqsuOsMY1pQP5)
+![MergeCSV](https://drive.google.com/uc?export=view&id=1bEB9XnyLGFeZiY2IkhGfqsuOsMY1pQP5)
 
 
 Based on the [documentation](https://developer.spotify.com/documentation/web-api/reference/object-model/) provided by Spotify I was able to quickly identify 16 unnecessary / categorical features.
@@ -21,7 +21,7 @@ Based on the [documentation](https://developer.spotify.com/documentation/web-api
 
 After removing the unnecessary / categorical features, I then verified that there weren't any null values in the remaining columns.
 
-![Drop](<https://drive.google.com/uc?export=view&id=1abDOQCfR5sT9LDXIFma4T7-4mw4dQWxK)
+![Drop](https://drive.google.com/uc?export=view&id=1abDOQCfR5sT9LDXIFma4T7-4mw4dQWxK)
 
 ![LambdaCheckNulls](https://drive.google.com/uc?export=view&id=1PT_j_wFQi6fmzqdAjWV4G6NIA5p0H-Lt)
 
