@@ -54,7 +54,7 @@ Because I know that my data is unbalanced (and in my first jupiter notebook I mo
 ![resample](https://drive.google.com/uc?export=view&id=1R4K-kIqSue4h8Lx5REzgxl7xPnoVTKiD)
 ![resample2](https://drive.google.com/uc?export=view&id=1WIltT8pr05B3UU4t_u0jRzlhVF_NLS1Y)
 
-Then I run another Logistic Regression Model with resampled data, confusion matrix, ROC Graph, random forest classifier, and hyperparameter tune with GridSearchCV. After all of these evaluations, I conclude that the model with the best accuracy is the first **Random Forest Classifier with 91% accuracy**.
+Finally, I run another Logistic Regression Model with resampled data and continue to validate my model with a confusion matrix, ROC Graph, random forest classifier, and hyperparameter tune with GridSearchCV. After all of these steps, I conclude that the model with the best accuracy is the first **Random Forest Classifier with 91% accuracy and precision**.
 
 
 
