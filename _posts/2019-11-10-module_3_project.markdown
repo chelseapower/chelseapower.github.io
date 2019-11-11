@@ -6,16 +6,22 @@ permalink:  module_3_project
 ---
 
 
-For a Machine Learning Classification project, I used 2018 Spotify user streaming session and track information. This project required merging two CSV files, closely analyzing the feature set and reducing the amount of features from 51 to 33 to determine if a track will be played or skipped using the predictor variable **not_skipped**. 
+For my Module 3 project, I spent over a week before I landed on using a Spotify dataset to build a deep neural network and predict whether a song would be played or not played/skipped. My biggest challenge for two different project topics of interest was finding an appropriate dataset.
+
+My first choice was using the [Barcelona](https://www.kaggle.com/xvivancos/barcelona-data-sets) dataset from Kaggle to determine how if you would have an accident based on your neighborhood. Unfortunately, this dataset didn’t have enough continuous features and/or the minimum amount of rows (50,000). The second dataset I was excited about (also from Kaggle) was about accidents in [France](https://www.kaggle.com/ahmedlahlou/accidents-in-france-from-2005-to-2016#places.csv) but I had the same issue where it didn’t have enough continuous features. 
+
+So back to the project dataset I ended up working on as my Machine Learning Classification project. 
+
+The 2018 Spotify user streaming session and track information required merging two CSV files, closely analyzing the feature set and reducing the amount of features from 51 to 33 to determine if a track will be played or skipped using the predictor variable **not_skipped**. 
 
 ## Observe
 
-I read in each of the Spotify CSV files, renamed and reordered columns so they could be merged with an inner join in a single dataset with 167,880 rows and 50 columns.
+I read in each of the Spotify CSV files, renamed and reordered columns so they could be merged with an inner join into a single dataset with 167,880 rows and 50 columns.
 
 ![MergeCSV](https://drive.google.com/uc?export=view&id=1bEB9XnyLGFeZiY2IkhGfqsuOsMY1pQP5)
 
 
-Based on the [documentation](https://developer.spotify.com/documentation/web-api/reference/object-model/) provided by Spotify I was able to quickly identify 16 unnecessary / categorical features.
+Based on the [documentation](https://developer.spotify.com/documentation/web-api/reference/object-model/) provided by Spotify, I was able to quickly identify 16 unnecessary / categorical features.
 
 ## Scrub
 
@@ -25,21 +31,19 @@ After removing the unnecessary / categorical features, I then verified that ther
 
 ![LambdaCheckNulls](https://drive.google.com/uc?export=view&id=1PT_j_wFQi6fmzqdAjWV4G6NIA5p0H-Lt)
 
-I also check to see how the data looks with my predictor variable **not_skipped**.
+I also checked to see how the data looked with my predictor variable **not_skipped**.
 
 ![ValueCounts](https://drive.google.com/uc?export=view&id=1TThk0gIzmtu0MXKO31GPgvJHKCYsgGHZ)
 
-This showed that the data is unbalanced.
+This showed that the data was unbalanced but I proceed with exploring the data further.
 
 ## Explore
 
-So I then create continuous dataset and take a quick look at the distrubutions of the data and confirm that there are only about nine features with normal distributions.
-
-The heatmap below shows multicolinarity for `beat_strength`, and then `dyn_range_mean` so these two additional features are dropped before I test and train the data.
+From the continuous dataset, I reviewed the distrubutions of the data and confirmed that there are only about nine features with normal distributions.
 
 ![Heatmap](https://drive.google.com/uc?export=view&id=1RvJqrEBYH-0qgPps4W4GKqoyLVsUwb1x)
 
-But since this is a classification project, I have to normalize the data prior to fitting the model.
+The heatmap below showed multicolinarity for `beat_strength` and `bounciness` so `bounciness` is dropped before I test and train the data. 
 
 ![Normalize](https://drive.google.com/uc?export=view&id=1zyaQouKUm9wEYiZqpzs7hV8cxbCv6SEG)
 
@@ -48,8 +52,9 @@ But since this is a classification project, I have to normalize the data prior t
 Because I know that my data is unbalanced (and in my first jupiter notebook I modeled my project without resampling that resulted in poor results), I run through the following steps to resample the data to balance it.
 
 ![resample](https://drive.google.com/uc?export=view&id=1R4K-kIqSue4h8Lx5REzgxl7xPnoVTKiD)
+![resample2](https://drive.google.com/uc?export=view&id=1WIltT8pr05B3UU4t_u0jRzlhVF_NLS1Y)
 
-After running Train-Test Split, Predicting, Interperting, I created a Confusion Matrix and ROC / AOC Curve.
+Then I run another Logistic Regression Model with resampled data, confusion matrix, ROC Graph, random forest classifier, and hyperparameter tune with GridSearchCV. After all of these evaluations, I conclude that the model with the best accuracy is the first **Random Forest Classifier with 91% accuracy**.
 
 
 
