@@ -47,6 +47,12 @@ To wrap things up, I added a final question.
 
 > Do customers in North America purchase the same quantity as other regions?
 
+With another groupby bar chart, it was again very easy to see that I would be rejecting the null hypothsis for this question.
+
+![chart3](http://drive.google.com/uc?export=1HTvjfizW8LZ5qZEBn5hoHGdN2DEOR0jf)
+
+And yes, my final results were **p (.000002) < α** so I had completed rejecting the null hypothesis for four questions for this project.
+
 
 
 
