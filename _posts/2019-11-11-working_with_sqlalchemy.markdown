@@ -27,13 +27,17 @@ For my second question, I bring in a new set of fields that focus on the custome
 
 This is the section where I had a challenge working with `groupby` for the first time in order to manipulate the data (as you would in a tool like excel) and output bar charts. Luckily, my instructor directed me to this [site](https://chrisalbon.com/python/data_wrangling/pandas_apply_operations_to_groups/) that helped me figure things out.
 
-![chart1](http://drive.google.com/uc?export=view&id=1rJ0MTAyVPhQA19gRhmEBBjXDDeXv45I)
+![chart1](http://drive.google.com/uc?export=view&id=1rJ0MTAyVPhQA19gRhmEBBjXDDeXv45I-)
 
 I proceeded with the same tests as noted above in Question 1 and ended up with the result **p (1.0) < α**, and rejected the null hypothesis again.
 
 For my final question, I pulled in the supplier and product tables in order to answer the question about chai sales by region. 
 
-![Query3](http://drive.google.com/uc?export=view&id=1MG_1bXhivPnJK8oNJTlUXf5w44v0bpi8)
+![query3](http://drive.google.com/uc?export=view&id=1MG_1bXhivPnJK8oNJTlUXf5w44v0bpi8)
+
+Now I was finally getting the hang of how to use groupby to display my data and it was very straight forward in creating the chai by region chart.
+
+![chart2](http://drive.google.com/uc?export=view&id=1VCWAhBzZjr0e_syt8JwsrW_xkXO2tOXm)
 
 
 
