@@ -18,6 +18,8 @@ Even though many of the variables are still skewed, the distributions are starti
 
 ![Histogram2](http://drive.google.com/uc?export=view&id=1HRp4RZduX9Mit0FSfp_jiOtkYqCuRcw0)
 
-Now these distributions look the best out of all! 
+These distributions look the best of all! 
 
-The key thing to remember about histograms is that even though they look like a bar chart, they only plot the frequency of occurrences for continuous data that has been divided into classes or bins. Bar charts on the other hand can be used to represent a number of other types of variables.
+The key thing to remember about histograms is that even though they look like a bar chart, they can only plot the frequency of occurrences for **continuous data** that has been divided into classes or bins. Bar charts on the other hand can be used to represent a number of other types of variables.
+
+So in conclusion, histograms are very valuable to use and I recommend including them in every data science project. However, they do have limitations that are based on the type of data you are trying to model.
