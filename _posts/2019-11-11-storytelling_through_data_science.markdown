@@ -20,13 +20,13 @@ My second project came along and I found myself still stuck where some of the pr
 * Highlight interesting results that drive to your solutions
 * Make a clear recommendation
 
-While the visual design, colors and layout has a lot of room for improvement, this is deck met all of the project requirements and conveys the storytelling around why the information is important. Following this format took additional time for reserach in order to build the story but it is well worth it. 
+While the visual design, colors and layout has a lot of room for improvement, this is deck met all of the project requirements and conveys the storytelling around why the information is important. Following this format took additional time for research in order to build the story but it is well worth it. 
 
 ### What's next?
 
 Over the past ten months of this program, I’ve also been read some interesting articles from [HBR](https://hbr.org/2019/01/data-science-and-the-art-of-persuasion), attended an [Edward Tufte one-day course](https://www.edwardtufte.com/tufte/courses), and found myself impressed with [Tableau](https://www.tableau.com/solutions/gallery/analysis-beatles) dashboards and other [data visualizations](https://blog.udacity.com/2015/01/15-data-visualizations-will-blow-mind.html). And the only thing that is super clear to me now is that my learning journey is not over. 
 
-Besides the obvious next steps like reading my collection of Edward Tufte books, taking a Tableau course, participating in a Kaggle competition, or volunteering on a data science project I plan to focus my newly found free time on practicing the "art" of data storytelling. At the end of the day, if you can't explain why something is valuable and important, then all of your hard work can feel like it's a waste as it gets deprioritized behind someone else data story.
+Besides the obvious next steps like reading my collection of Edward Tufte books, taking a Tableau course, participating in a Kaggle competition, or volunteering on a data science project I plan to focus my newly found free time on practicing the "art" of data storytelling. At the end of the day, if you can't explain why something is valuable and important, then all of your hard work can feel like a waste as it's deprioritized behind someone else great data story.
 
 
 
