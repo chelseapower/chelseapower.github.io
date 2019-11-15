@@ -6,7 +6,9 @@ permalink:  cleaning_and_crunching_data
 ---
 
 
-For my Module 4 project, I was faced with cleaning and combining three separate CSV files where they grew from **11.6 million to over 17 million records**. Because I knew the starting size of each file, my approach was to begin by cleaning the smallest dataset before joining it with the next most smallest dataset (in terms of columns). I focused on reducing noise (removing unnecessary columns, replacing important null columns with zeros, and remvoing rows with null values) and making business decisions about scaling down the data by setting rules like:
+For my Module 4 project, I decided to continue to work with Spotify streaming music data but took inspiration from next steps in a 2018 published paper and the nowplaying-RS dataset. By incorporating mood related hashtags and timestamps in a neural network to predict the emotion variation of the user based on the track they are playing, can this improve the **next song recommendation model**?
+
+This project was the most difficult one yet. I was faced with cleaning and combining three separate CSV files where they grew from **11.6 million to over 17 million records** when joined. Because I knew the starting size of each file, my approach was to begin by cleaning the smallest dataset before joining it with the next most smallest dataset (in terms of columns). I focused on reducing noise (removing unnecessary columns, replacing important null columns with zeros, and remvoing rows with null values) and making business decisions about scaling down the data by setting rules like:
 
 > **Remove tracks that were played less than 50 times**
 
@@ -22,19 +24,19 @@ I always like to start by generating histograms for the data.
 
 ![Histogram](https://drive.google.com/uc?export=view&id=1eRoEaBKmyrwhpsvDXdpIXgRV6SVAXmNP)
 
-Most of the data is skewed and has outliers. So then I checked for multicollinarity by generating a heatmap.
+Most of the data was skewed and had outliers. So then I checked for multicollinarity by generating a heatmap.
 
 ![Multicollinearity](https://drive.google.com/uc?export=view&id=1l_Ayu6ps5Ace4WMdK5qQ21LyTFMBSk6v)
 
 Two variables showed to be highly correlated to each other (loudness and energy) but I decided to leave them in. 
 
-My next challenge is dealing with the data being imbalanced. After upsampling and scaling the data, I end up with a balanced dataset!
+My next challenge is dealing with the data being imbalanced which was similar to my Module 3 project. I immediately moved to upsampling and scaling the data to end up with a balanced dataset.
 
 ![Predictor scaled](https://drive.google.com/uc?export=view&id=1pSQ5RvFloq8Is650rj84LKVw_y1CFzG1)
 
 ### Summary
 
-After all of the data cleaning and reduction efforts, my final results paid off. The final sequential neural network model predicts with **100% accuracy!** You can view my jupyter notebook and presentation in my [Git Hub.](https://github.com/chelseapower/dsc-4-final-project-online-ds-pt-011419/)
+After all of the data cleaning and reduction efforts, my final results paid off. The final sequential neural network model predicts with **100% accuracy!** You can view my jupyter notebook and presentation in my [Git Hub.](https://github.com/chelseapower/dsc-4-final-project-online-ds-pt-011419/) or try to build your own kernal on [Kaggle](https://www.kaggle.com/chelseapower/nowplayingrs).
 
 
 
