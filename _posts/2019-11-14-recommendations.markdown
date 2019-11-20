@@ -15,4 +15,20 @@ So I set out to build a recommender system based on 100,000 rows (169 MB) of pro
 
 In my Logistic Regression test where I used **gender** as the predictor, my results only came to **52-54%** accuracy and precision, which isn’t great. So, I proceeded to a Random Forest Classifier and my model increased to **100%**!
 
+![Random Forest Model Classification Report](http://drive.google.com/uc?export=view&id=1imfK5yOUjcJ67UZongdQshoByK8B-g2E)
+
+And this also showed me which here my most important features:
+
+![Features](http://drive.google.com/uc?export=view&id=133OnChK5XQSSlAh3xRdR0TKiy1n2fbdw)
+
+**Recommender Systems**
+
+So then I moved on to:
+
+* Fit a recommender system model to a set of data
+* Create a function that will return the top recommendations for a user
+* Introduce a new user to a rating matrix and make recommendations for them
+
+
+
 
