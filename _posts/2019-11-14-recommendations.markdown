@@ -21,7 +21,7 @@ I also plotted a feature importance chart:
 
 ![Features](http://drive.google.com/uc?export=view&id=133OnChK5XQSSlAh3xRdR0TKiy1n2fbdw)
 
-The top features are: `headline`, `revenue_2018`, `venue_name` and `mosaic_encode`.
+The top features are: `headline`, `revenue_2018`, and `venue_name`.
 
 **Recommender Systems**
 
@@ -32,6 +32,12 @@ So then I moved on to:
 * Introduce a new user to a rating matrix and make recommendations for them
 
 The model with the best results was **SVD** with `n_factors=20, reg_all=0.02`.
+
+**Next Steps**
+
+* Merge an artist ranking dataset and re-run the recommendation model.
+* Try and chain all of the steps together into one function that asks users for ratings for a certain number of artists, then all of the above steps are performed to return the top n recommendations.
+* Make a recommender system that only returns items that come from a specified genre.
 
 
 
